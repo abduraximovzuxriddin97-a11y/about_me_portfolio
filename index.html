@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11.2.10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section class="the_main_part">
+        <header class="head">
+            <div class="nav_links">
+                <li onclick="goToSlide(0)"><i class="fa-solid fa-house"></i>Bosh sahifa</li>
+                <li onclick="goToSlide(1)"><i class="fa-solid fa-address-card"></i>Men haqimda</li>
+                <li onclick="goToSlide(2)"><i class="fa-solid fa-diagram-project"></i>Loyihalarim</li>
+                <li onclick="goToSlide(3)"><i class="fa-solid fa-phone"></i>Bog‘lanish</li>
+            </div>
+        </header>
+        <section class="departments swiper">
+            <div class="swiper-wrapper">
+                <section id="home" class="home swiper-slide">
+                    <div class="home_text">
+                        <h1>Bosh sahifa</h1>
+                    </div>
+                    <div class="container">
+                        <div class="hello">
+                            <h1>Salom, men <span>Zuxriddin</span></h1>
+                            <h2><span>Web</span> Dasturchiman</h2>
+                            <p>Zamonaviy va qulay web saytlar yarataman. <span>Frontend</span> & <span>Backend</span> yo‘nalishida o‘qiyman va faoliyat yuritaman.</p>
+                            <div class="hello_btns">
+                                <button onclick="home_btn(2)">Loyihalarim</button>
+                                <button onclick="home_btn(3)">Men bilan bog‘lanish</button>
+                            </div>
+                        </div>
+                        <div class="photo_dev">
+                            <img src="./myimage.jpg" alt="rasm">
+                        </div>
+                    </div>
+                    <div class="footer_text">
+                        <h4>© 2025 Zuxriddin Abduraximov. Barcha huquqlar himoyalangan.</h4>
+                    </div>
+                </section>
+                <section id="about" class="about swiper-slide">
+                    <div class="about_text">
+                        <h1>Men haqimda</h1>
+                    </div>
+                    <div class="about_container">
+                        <div class="about_level">
+                            <div class="progreses">
+                                <div class="progres">
+                                    <div class="foiz">
+                                        <h3>HTML/CSS</h3>
+                                        <h2>95%</h2>
+                                    </div>
+                                    <div class="pro"><div id="pro1"></div></div>
+                                </div>
+                                <div class="progres">
+                                    <div class="foiz">
+                                        <h3>JS</h3>
+                                        <h2>85%</h2>
+                                    </div>
+                                    <div class="pro"><div id="pro2"></div></div>
+                                </div>
+                                <div class="progres">
+                                    <div class="foiz">
+                                        <h3>Python</h3>
+                                        <h2>90%</h2>
+                                    </div>
+                                    <div class="pro"><div id="pro3"></div></div>
+                                </div>
+                                <div class="progres">
+                                    <div class="foiz">
+                                        <h3>TG bot</h3>
+                                        <h2>85%</h2>
+                                    </div>
+                                    <div class="pro"><div id="pro4"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_card">
+                            <div class="card_level">
+                                <div class="progres_text">
+                                    <h2>Men Frontend, Backend yo'nalishlarida faoliyat yuritaman va ushbu yo'nalishlarda darajamni oshirib borishga harakat qilaman. 
+                                        Asosan web-saytlar va telegram botlar bilan ishlayman. Ushbu yo'nalishlar sizga qiziq bo'lsa murojat qilishingiz mumkin. 
+                                        Men iloji boricha malakam va ko'nikmalarim asosida sizga zamonaviy, qulay va chiroyli loyihalarni taqdim etishga harakat qilaman!</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="project" class="project swiper-slide">
+                    <div class="project_text">
+                        <h1>Loyihalarim</h1>
+                    </div>
+                </section>
+                <section id="contact" class="contact swiper-slide">
+                    <div class="contact_text">
+                        <h1>Bog‘lanish</h1>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="https://unpkg.com/swiper@11.2.10/swiper-bundle.min.js"></script>
+    
+    <script src="./func.js"></script>
+</body>
+</html>
