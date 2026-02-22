@@ -9,6 +9,46 @@ body {
     background: rgb(32, 32, 32);
 }
 
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+  /* Yo‘qolgandan keyingi holat */
+#loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#loader i {
+  animation: load 1.2s linear infinite;
+  opacity: 0;
+}
+
+#loader i:nth-child(1){
+  animation-delay: 0.3s;
+}
+
+#loader i:nth-child(2){
+  animation-delay: 0.6s;
+}
+
+#loader i:nth-child(3){
+  animation-delay: 0.9s;
+}
+
 
 .the_main_part {
     width: 100%;
@@ -254,7 +294,6 @@ body {
 }
 
 
-
 .card_level {
     width: 500px;
     height: 500px;
@@ -354,7 +393,7 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 150px;
+    gap: 200px;
     padding: 100px;
     padding-top: 70px;
     background: rgb(32, 32, 32);
@@ -365,6 +404,76 @@ body {
     font-size: 20px;
     text-align: start;
 }
+
+.project_cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.card {
+    width: 700px;
+    background: rgb(17, 17, 17);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+}
+
+
+.see_project {
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 280px;
+    text-decoration: none;
+    transition: ease 0.2s;
+}
+
+.see_project:hover {
+    background: rgb(32, 32, 32);
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: ease 0.4s;
+}
+
+
+.card_img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+
+.card p {
+    color: white;
+}
+
+
+.card p span {
+    color: rgb(0, 142, 0);
+    font-weight: 600;
+}
+
 
 /* Contact */
 #contact {
