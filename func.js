@@ -1,13 +1,3 @@
-window.addEventListener('load', function() {
-    const loader = document.getElementById('loader');
-
-    // 2 soniya ko‘rsatiladi va keyin yo‘qoladi
-    setTimeout(function() {
-      loader.classList.add('hidden');
-    }, 10000);
-  });
-
-
 let swiper = new Swiper(".departments", {
     effect: "cube",
     allowTouchMove: true,
